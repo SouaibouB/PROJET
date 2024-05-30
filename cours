@@ -1,0 +1,8 @@
+fonction de hachage
+select sha2("mot_de_passe",hash_length);
+select md5("mot_de_passe");
+                                                |-- BruteForcePasswordCracker
+PasswordCrackerFactory ==> PasswordCracker      |
+                                                |-- DictionnaryPasswordCracker
+PasswordCracker
+    String crack(String hash)
